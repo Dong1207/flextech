@@ -4,6 +4,16 @@ const app = Vue.createApp({
             courseGoal: 'Finish the course anh learn Vue!',
             vueLink: 'https://toidicodedao.com/'
         }
+    },
+    methods: {
+        outputGoal() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return 'Learn Vue!'
+            } else {
+                return 'Master Vue!'
+            }
+        }
     }
 });
 
